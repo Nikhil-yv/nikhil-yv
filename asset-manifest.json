@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/nikhil-yv/static/css/main.e1341fb3.css",
+    "main.js": "/nikhil-yv/static/js/main.ddd23b89.js",
+    "index.html": "/nikhil-yv/index.html",
+    "main.e1341fb3.css.map": "/nikhil-yv/static/css/main.e1341fb3.css.map",
+    "main.ddd23b89.js.map": "/nikhil-yv/static/js/main.ddd23b89.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e1341fb3.css",
+    "static/js/main.ddd23b89.js"
+  ]
+}
