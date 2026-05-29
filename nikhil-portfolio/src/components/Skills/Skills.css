@@ -1,0 +1,45 @@
+.modern-skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.modern-skill-container {
+  background-color: rgba(15, 23, 42, 0.4);
+  border: 1px solid rgba(30, 41, 59, 0.8);
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  transition: var(--transition);
+}
+
+.modern-skill-container:hover {
+  border-color: var(--accent-blue);
+  transform: translateY(-2px);
+  background-color: var(--bg-card);
+}
+
+.modern-skill-container h3 {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.75rem;
+}
+
+.modern-skill-container:nth-child(1) h3 { color: var(--accent-cyan); }
+.modern-skill-container:nth-child(2) h3 { color: var(--accent-blue); }
+.modern-skill-container:nth-child(3) h3 { color: #a855f7; }
+.modern-skill-container:nth-child(4) h3 { color: var(--accent-green); }
+
+.pill-cloud {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+.tech-pill {
+  display: inline;
+}
+
+.tech-pill:not(:last-child)::after {
+  content: ", ";
+}
