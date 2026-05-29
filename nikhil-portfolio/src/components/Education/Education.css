@@ -1,47 +1,35 @@
-.edu-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2rem;
+
+.education-section {
+  margin: 64px 0;
 }
 
-.edu-card {
-  background-color: var(--bg-card);
-  border: 1px solid var(--border-color);
-  border-radius: 1rem;
-  padding: 2rem;
-  transition: var(--transition);
+.edu-container {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
 }
 
-.edu-card:hover {
-  border-color: rgba(59, 130, 246, 0.3);
-  background-color: var(--bg-card-hover);
-}
-
-.edu-card h3 {
-  font-size: 1.15rem;
-  font-weight: 700;
-  margin-bottom: 0.25rem;
-}
-
-.edu-meta {
-  font-size: 0.9rem;
-  color: var(--text-secondary);
-  margin-bottom: 0.5rem;
-}
-
-.edu-issuer {
-  font-size: 0.85rem;
-  font-family: var(--font-mono);
-  color: var(--accent-blue);
-}
-
-@media (max-width: 768px) {
-  .edu-grid {
-    grid-template-columns: 1fr;
-    gap: 1.25rem;
+@media (max-width: 600px) {
+  .edu-container {
+    flex-direction: column;
   }
-  
-  .edu-card {
-    padding: 1.5rem;
-  }
+}
+
+.edu-card-wrapper {
+  flex: 1;
+}
+
+.edu-card-box {
+  height: 100%;
+  padding: 16px;
+  transition: all 0.3s ease-in-out !important;
+  background-color: transparent !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+.edu-card-box:hover {
+  background-color: rgba(30, 41, 59, 0.8) !important;
+  transform: translateY(-5px);
+  border: 1px solid #06b6d4 !important; /* Cyan accent */
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3) !important;
 }

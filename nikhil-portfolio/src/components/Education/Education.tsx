@@ -1,23 +1,36 @@
 import React from 'react';
+import { Typography, Card, CardContent, Box } from '@mui/material';
 import './Education.css';
 
 const Education: React.FC = () => {
   return (
-    <section id="education" className="container">
-      <h2 className="section-title">Education & Credentials</h2>
-      <div className="edu-grid">
-        <div className="edu-card">
-          <p className="edu-meta">Master of Science — 2016</p>
-          <h3>Computer & Information Systems</h3>
-          <p className="edu-issuer">Kent State University</p>
-        </div>
-        <div className="edu-card">
-          <p className="edu-meta">Microsoft Certifications</p>
-          <h3>Microsoft Certified Professional (MCP)</h3>
-          <p className="edu-issuer">Specialist: HTML5 with JavaScript & CSS3</p>
-        </div>
-      </div>
-    </section>
+    <Box id="education" component="section" className="education-section">
+      <Typography variant="h5" sx={{ mb: 3, fontWeight: 700 }}>
+        Education & Credentials
+      </Typography>
+
+      <Box className="edu-container">
+        <Box className="edu-card-wrapper">
+          <Card className="edu-card-box">
+            <CardContent>
+              <Typography variant="body2" color="text.secondary">Master of Science — 2016</Typography>
+              <Typography variant="h6">Computer & Information Systems</Typography>
+              <Typography color="primary">Kent State University</Typography>
+            </CardContent>
+          </Card>
+        </Box>
+
+        <Box className="edu-card-wrapper">
+          <Card className="edu-card-box">
+            <CardContent>
+              <Typography variant="body2" color="text.secondary">Microsoft Certifications</Typography>
+              <Typography variant="h6">Microsoft Certified Professional (MCP)</Typography>
+              <Typography color="primary">Specialist: HTML5 with JavaScript & CSS3</Typography>
+            </CardContent>
+          </Card>
+        </Box>
+      </Box>
+    </Box>
   );
 };
 

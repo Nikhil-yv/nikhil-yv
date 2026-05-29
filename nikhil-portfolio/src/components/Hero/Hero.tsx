@@ -6,7 +6,7 @@ const Hero: React.FC = () => {
     <section className="hero-display container">
       <div className="hero-content-block">
         <h1>Hi, I'm <span className="gradient-text">Nikhil Elpula</span></h1>
-        <p className="hero-subtitle">Senior Frontend Engineer & UI Architect</p>
+        <p className="hero-subtitle">Senior Frontend Engineer & React JS Specialist</p>
         <p className="hero-lead-text">
           High-impact Frontend Engineer with <strong>10 years of experience</strong> architecting enterprise-scale platforms. Expert in building high-concurrency fintech applications supporting <strong>1M+ active banking users</strong> and integrating AI-driven solutions to optimize system runtime and architecture.
         </p>
